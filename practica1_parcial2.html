@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        table{
+            border: 1px color solid black;
+            text-align: center;
+            margin: 0 auto;
+        }
+        h3{
+            text-align: center;
+        }
+        tr{
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practica 1, Parcial 2</h1>
+    <fieldset>
+        <table>
+            <tr>
+                    <h3>Registro</h3>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nombre">Escribe tu nombre completo</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="nombre"type="text" value="Nombre">&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <label for="usuario">Escribe tu nombre de Usuario</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="usuario"type="text" value="Nombre de Usuario">&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <label for="contra">Escribe tu contraseña</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="contra"type="password" maxlenght="20">&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+ 
+            <tr>
+                <td>
+                    <label for="correo">Escribe tu correo electronico</label>&nbsp;&nbsp;&nbsp;<br/>
+                <input name="correo"type="email" value="Correo">&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <label for="rfc">Escribe tu RFC</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="rfc"type="text" value="RFC" maxlenght="14">&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <label for="calle">Escribe tu calle</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="calle" type="text" value="Calle">&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="colo">Escribe tu colonia</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="colo"type="text" value="Colonia">&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <label for="numcasa">Escribe tu numero de casa</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="numcasa" type="number" value="Num. Casa" >&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <label for="cp">Escribe tu CP</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="cp" type="number" value="CP" >&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fecha">Escribe tu fecha de nacimiento</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <input name="fecha" type="date" value="Fecha de nacimiento" >&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <label for="estado">Selecciona tu Estado</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <select>
+                        <option value="1">Aguascalientes</option>
+                        <option value="2">Baja California</option>
+                        <option value="3">Baja California Sur</option>
+                        <option value="4">Campeche</option>
+                        <option value="5">Chiapas</option>
+                        <option value="6">Chihuahua</option>
+                        <option value="7">Ciudad de Mexico</option>
+                        <option value="8">Coahuila</option>
+                        <option value="9">Colima</option>
+                        <option value="10">Durango</option>
+                        <option value="11">Estado de Mexico</option>
+                        <option value="12">Guanajuato</option>
+                        <option value="13">Guerrero</option>
+                        <option value="14">Hidalgo</option>
+                        <option value="15">Jalisco</option>
+                        <option value="16">Michoacan</option>
+                        <option value="17">Morelos</option>
+                        <option value="18">Nayarit</option>
+                        <option value="19">Nuevo Leon</option>
+                        <option value="20">Oxaca</option>
+                        <option value="21">Puebla</option>
+                        <option value="22">Queretaro</option>
+                        <option value="23">Quintana Roo</option>
+                        <option value="24">San Luis Potosi</option>
+                        <option value="25">Sinaloa</option>
+                        <option value="26">Sonora</option>
+                        <option value="27">Tabasco</option>
+                        <option value="28">Tamaulipas</option>
+                        <option value="29">Tlaxcala</option>
+                        <option value="30">Veracruz</option>
+                        <option value="31">Yucatan</option>
+                        <option value="32">Zacatecas</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="pais">Selecciona tu Pais</label>&nbsp;&nbsp;&nbsp;<br/>
+                    <select>
+                        <option value="1">Mexico</option>
+                        <option value="2">EUA</option>
+                        <option value="3">Canada</option>
+                        <option value="4">Chile</option>
+                    </select>&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <input name="boton" type="submit"  value="Enviar">
+                <input name="boton" type="reset" value="Borrar">
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
