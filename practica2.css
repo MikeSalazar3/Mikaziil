@@ -1,0 +1,33 @@
+#contenedor{
+    margin: auto;
+    width: 900px;
+    height: 550px;
+    padding: 30px;
+    background-color: silver;
+}
+h1 h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.hola{
+    width: 96%;
+    background-color: white;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.adios{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.qonda{
+    width: 100%;
+    background-color: cornflowerblue;
+    padding: 15px;
+    margin-bottom: 18px;
+}
