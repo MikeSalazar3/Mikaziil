@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+#hola{
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid gray;
+    text-align: center;
+}
+#frase{
+    width: 90%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+button{
+    width: 90%;
+    height: 30px;
+}
