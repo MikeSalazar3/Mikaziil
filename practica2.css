@@ -30,25 +30,4 @@ footer{
     background-color: cornflowerblue;
     padding: 15px;
     margin-bottom: 18px;
-}
-li{
-    margin: 5px; 
-}
-#hola{
-    width: 300px;
-    height: 100px;
-    background-color: aqua;
-    border-radius: 20px;
-    color: brown;
-    font-size: 30px;
-}
 
-p{
-    text-align: center;
-    margin: 11%;
-}
-
-#hola:hover{
-    background-color: blue;
-    border-radius: 20px 0px 20px 0px;
-}
