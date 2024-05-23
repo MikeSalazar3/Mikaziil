@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de multiplicar</title>
+    <style>
+        /* Estilos CSS para la tabla */
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario un número
+        const numero = parseInt(prompt("Ingresa un número:"));
+
+        // Generar la tabla de multiplicar
+        let tabla = "<table>";
+        tabla += "<tr><th>Número</th><th>Resultado</th></tr>";
+        for (let i = 1; i <= 10; i++) {
+            const resultado = numero * i;
+            tabla += `<tr><td>${numero} x ${i}</td><td>${resultado}</td></tr>`;
+        }
+        tabla += "</table>";
+
+        // Mostrar la tabla en pantalla
+        document.body.innerHTML = tabla;
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Mayúsculas y Minúsculas</title>
+    <style>
+        /* Estilos CSS para el formulario */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #0074D9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario">
+        <input type="text" id="cadena" placeholder="Ingresa una cadena de texto">
+        <button type="button" onclick="verificarMayusMinus()">Verificar</button>
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarMayusMinus() {
+            const cadena = document.getElementById("cadena").value;
+
+            if (cadena === cadena.toUpperCase()) {
+                document.getElementById("resultado").textContent = "La cadena está compuesta solo por mayúsculas.";
+            } else if (cadena === cadena.toLowerCase()) {
+                document.getElementById("resultado").textContent = "La cadena está compuesta solo por minúsculas.";
+            } else {
+                document.getElementById("resultado").textContent = "La cadena contiene mayúsculas y minúsculas.";
+            }
+        }
+    </script>
+</body>
+</html>
