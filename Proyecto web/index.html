@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<!--script para llamar al grafioc de google chars-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Estados Unidos',     10],
+          ['India',      5],
+          ['Singapur',  4],
+          ['Reino Unido', 3],
+          ['Indonesia',    5],
+          ['Brasil',  4]
+        ]);
+
+        var options = {
+          title: 'Uso de la inteligencia arificial'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+</script>
+<body>
+    <!--barra de nevagacion se trabajo con varios div para darle forma con los estilos css el checkbox sirve para que al momento de dar click sobre el
+    salga la barra desplegable el primer div es donde sale el logo de la universidad en al esquina superior izquierda los otros div fueron para crear las tres
+    lineas al moneto de la dar click sobre la barra desplegable y en la etiqueta nav estan los enlaces a las otras vistas de la paginas -->
+    <input type="checkbox" id="menu">
+    
+    <header>
+        <div class="logo">
+            <img src="imagenes/Logo.png" alt="logo" width="50" height="50">
+            <h1>UP<span>SLP</span></h1>
+        </div>
+        
+        <label for="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    <!--En todas las vistas de la pagina estan la misma barra de navegacion ye el mismo pie de pagina -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="media.html">Media</a>
+            <a href="bloc.html">Bloc</a>
+            <a href="preguntas frecuentes.html">Preguntas</a>
+        </nav>
+    </header>
+    <!--Este div es para la imagen de fondo (La portada de la venta principal)-->
+    <div id="caja1">
+        <div id="caja2">
+        <h1 id="titulo1">Inteligencia artificial generativa</h1>
+        </div>
+        </div>
+    <!--En esta parte se encuntra toda la informacion relacioanda a la inteligencia artifial generativa toda esta separada por div para darle 
+    mayor orden detro de la pagina y la informacion esta acomorada por listas con puntos clave respecto al tema-->
+    <div id="caja3">
+        <h2>¿Que es la inteligencia artifial genetrativa?</h2>
+        <p class="p1">La inteligencia artifial generativa (IAG) es una rama de la inteligancia artificial que se centra en crear imegenes, conversaciones, contenidos nuevos, etc.
+        El origen de la inteligencia artificial generativa (IAG) se remonta a la necesidad de simular los procesos de pensamiento humano. Originalmente, 
+        la IAG surgió con el propósito de imitar la inteligencia humana en tareas informáticas no tradicionales, como el reconocimiento de imágenes, el 
+        procesamiento de lenguaje natural (NLP) y la traducción.
+        La inversión en IAG ha aumentado significativamente a principios de la década de 2020, con grandes empresas como Microsoft, Google y Baidu, así 
+        como numerosas empresas más pequeñas, desarrollando modelos de IA generativa. Esto ha llevado a un crecimiento en la capacidad de la IA para generar contenido 
+        nuevo y creativo, utilizando grandes cantidades de datos para aprender y luego aplicar ese aprendizaje para crear nuevas ideas y contenidos
+    </p>
+    <img id="imagen1" src="imagenes/IAG.jpg" alt="inteligancia artificial">
+    </div>
+    <div id="caja4">
+        <h2>Funcionamiento</h2>
+    <p class="p2">La IA generativa funciona mediante redes neuronales artificiales que imitan 
+        la forma en que se cree que funciona el cerebro humano. Estas redes neuronales 
+        se entrenan introduciendo grandes cantidades de datos y luego pidiendo a la IA que realice predicciones simples, como la siguiente palabra de una secuencia o el 
+        orden correcto de una serie de oraciones. La red neuronal recibe retroalimentación positiva o negativa por cada respuesta correcta o incorrecta, p
+        or lo que aprende del proceso hasta que es capaz de pronosticar con éxito. </p>
+
+    <h2>Impacto social</h2>
+    <p>La inteligencia artificial generativa tiene muchos beneficios entre ellos:</p>
+    <ul>
+        <li>La creacion de contenido nuevo en el area del arte</li>
+        <li>Contenido publicitario en el area de marketing, lo que ayuda a las empresas</li>
+        <li>Aplicación en la investigación científica y en la medicina para analizar grandes cantidades de datos.</li>
+    </ul>
+    <p>Pero tambien la inteligencia artifial generativa presenta algunos riesgos o limitaciones entre ellas :
+        <ul>
+            <li>La IAG puede llegar acrear contenido sesgado</li>
+            <li>El riesgo de la privacidad con la IA, ya que puede existir el uso de datos personales de manera indevida </li>
+            <li>El uso de propiedad intelectual</li>
+            <li>La gran cantidad de contenido que crea puede llegar a ser dañino</li>
+        </ul>
+    </div>
+    <div id="caja5">
+        <h2>Situacion actual</h2>
+        <p>La inteligencia artificial generativa, en el año 2023 ha desempeñado un un papel cada dia mas importante por lo ha 
+            tenido un impacto mas significativo en la industria. Y esta a su vez a tenido avancez muy destacados en entres ellos se encuentra: </p>
+        <ul>
+            <li>Innovaciones en generación de imágenes</li>
+            <li>Evolución en la generación de video</li>
+            <li>Progresos en la generación de texto</li>
+            <li>Algunas alianzas estratégicas</li>
+        </ul>
+        <h2>Vision a futuro </h2>
+        <p>La inteligencia artificial (IA) generativa se encuentra en el epicentro de una revolución tecnológica, prometiendo una transformación 
+            profunda en múltiples áreas y aspectos de nuestra vida diaria.A medida que progresamos, diversas tendencias emergentes en este ámbito están trazando un futuro
+             emocionante y desafiante. Exploremos algunas de las tendencias más relevantes que podrían moldear el panorama de la IA generativa en los próximos años.</p>
+             <ul>
+                <li>Apple y su incursión estratégica en la IA</li>
+                <li>Futuro de OpenAI: Una fase más agresiva</li>
+                <li>Desafíos legales y regulatorios en la IA</li>
+                <li>La Importancia creciente de la calidad de los datos</li>
+                <li>Avances en la terminología de IA</li>
+                <li>Microsoft y OpenAI: Una alianza Incierta</li>
+             </ul>
+    </div>
+    <!--En esta parte se encuentra coloco el grafioc de google chars junto una imagen que muestra algunas estadisticas-->
+    <div id="caja6">
+    <div id="piechart"></div>
+    <figure>
+    <img id="estadisticas" src="estilos/estadisticas.png" alt="Mapa de estadisticas" usemap="#mapa1">
+    <map name="mapa1">
+        <area shape="rect" coords="0,0,1200,1000" href="https://www.techopedia.com/es/estadisticas-inteligencia-artificial">
+    </map>
+    </figure>
+</div>
+</body>
+<!--Aqui podemos ver el pie de pagina que esta dentro de varios divs para poder hacerlo resposivo el sitio ademas que aqui estan todas las referencias de
+donde se obtuvo la informacion y ademas cuneta con los enlaces a redes sociales los iconos se obtuvieron de boostrap-->
+<footer class="footer">
+    <div class="conteiner">
+        <div class="footer-row">
+            <div class="footer-link">
+                <h4>Referencias</h4>
+                <ul>
+                    <li><a href="https://aws.amazon.com/es/what-is/generative-ai/">aws</a></li>
+                    <li><a href="https://www.obsbusiness.school/blog/que-es-la-inteligencia-artificial-generativa">OBS</a></li>
+                    <li><a href="https://www.oracle.com/cl/artificial-intelligence/generative-ai/what-is-generative-ai/">OCI</a></li>
+                    <li><a href="https://es.linkedin.com/pulse/presente-y-futuro-de-la-inteligencia-artificial-miguel-ángel-trabado-kuqvf">Linkedin</a></li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h4>Autores </h4>
+                <ul>
+                    <li><a href="#">Isaac Elihu Rios de la Tejera</a></li>
+                    <li><a href="#">184642</a></li>
+                    <li><a href="#">Miguel Angel Salazar Martinez</a></li>
+                    <li><a href="#">183833</a></li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h4>Redes sociales </h4>
+                <div class="social-link">
+                    <a href="https://www.facebook.com/profile.php?id=100089758716400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                          </svg>
+                    </a>
+                    <a href="https://www.instagram.com/openai/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+                    </a>
+                    <a href="https://github.com/IsaacRios25/ProgramacionWeb">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                          </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@OpenAI">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                          </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
